@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $(window).on('load',function(){
+    $(window).on('load', function () {
         $('.preloader').addClass('complete');
     })
 
@@ -37,7 +37,7 @@ $(document).ready(function () {
     });
 
     var filterizd = $('.filter-container').filterizr({
-        animationDuration : .5,
+        animationDuration: .5,
     });
 
 

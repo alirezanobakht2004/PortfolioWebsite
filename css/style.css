@@ -204,7 +204,7 @@ header {
     width: 140%;
     height: 70%;
     background: #000;
-    transition: 2s;
+    transition: 1s;
 }
 
 .preloader::after {
@@ -214,7 +214,7 @@ header {
     width: 100%;
     height: 70%;
     background: #000;
-    transition: 2s;
+    transition: 1s;
 }
 
 .preloader.complete::before {

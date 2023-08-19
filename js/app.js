@@ -14,7 +14,7 @@ $(document).ready(function () {
     })
 
     var typed = new Typed(".element", {
-        strings: ["lireza Nobakht", "&nbsp;developer", "&nbsp;trader", "&nbsp;fisherman"],
+        strings: ["lireza Nobakht", "&nbsp;developer", "&nbsp;teacher", "&nbsp;web designer"],
         smartBackspace: true,
         typeSpeed: 100,
         backSpeed: 100,

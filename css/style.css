@@ -52,7 +52,7 @@ nav.r-nav.stickyadd {
 
 nav.stickyadd .navbar-brand {
     color: #000;
-    font-size: 40px;
+    font-size: 30px;
     transition: .5s all;
 }
 
@@ -202,7 +202,7 @@ header {
     position: absolute;
     bottom: 0;
     width: 140%;
-    height: 70%;
+    height: 50%;
     background: #000;
     transition: 1s;
 }
@@ -212,17 +212,17 @@ header {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 70%;
+    height: 50%;
     background: #000;
     transition: 1s;
 }
 
 .preloader.complete::before {
-    bottom: -70%;
+    bottom: -50%;
 }
 
 .preloader.complete::after {
-    top: -70%;
+    top: -50%;
 }
 
 .preloader.complete {

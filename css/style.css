@@ -226,7 +226,7 @@ header {
 }
 
 .preloader.complete {
-    visibility: hidden;
+    visibility: hidden !important;
 }
 
 .work .card-wrapper {

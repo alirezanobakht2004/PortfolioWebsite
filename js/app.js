@@ -32,6 +32,8 @@ $(document).ready(function () {
             p[2].setAttribute("style", "width:85%;transition:2s all");
             p[3].setAttribute("style", "width:75%;transition:2.5s all");
             p[4].setAttribute("style", "width:65%;transition:3s all");
+            p[5].setAttribute("style", "width:55%;transition:3.5s all");
+            p[6].setAttribute("style", "width:55%;transition:4s all");
         },
         offset: '90%'
     });

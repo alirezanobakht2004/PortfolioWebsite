@@ -1493,3 +1493,8 @@ body:not([data-mode]) .resume-role-card{
   }
   .brand:hover .brand-mark.logo-mark{transform:translateY(-1px)}
 }
+
+
+/* LedgerFlow and integration refinements */
+.project-actions{display:flex;align-items:center;gap:.55rem;margin-top:.1rem;flex-wrap:wrap}.project-actions .btn{width:auto}.project-github{box-shadow:0 12px 30px rgba(56,189,248,.15)}.capability-integration{--cap-accent:var(--cyan);--cap-glow:rgba(56,189,248,.14)}
+@media (max-width:640px){.project-actions .btn{width:100%;justify-content:center}}

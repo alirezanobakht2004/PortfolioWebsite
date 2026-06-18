@@ -22,7 +22,7 @@
   const modeHelper = doc.querySelector('[data-mode-helper]');
   const modeCopy = {
     all: 'Compare all three role paths.',
-    dotnet: 'Focus on ASP.NET Core, APIs, SQL Server, and production backend work.',
+    dotnet: 'Focus on ASP.NET Core, APIs, SQL Server, CQRS, and production backend work.',
     java: 'Focus on Spring Boot, REST services, data platforms, and backend workflows.',
     product: 'Focus on requirements, workflows, feasibility, and measurable delivery.'
   };

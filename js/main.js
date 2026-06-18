@@ -6,15 +6,35 @@
   const navToggle = doc.querySelector('.nav-toggle');
   const navMenu = doc.querySelector('#nav-menu');
   if (navToggle && navMenu) {
-    navToggle.addEventListener('click', () => {
-      const isOpen = navMenu.classList.toggle('is-open');
-      navToggle.setAttribute('aria-expanded', String(isOpen));
+    const closeMenu = () => {
+      navMenu.classList.remove('is-open');
+      body.classList.remove('mobile-nav-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'Open menu');
+    };
+    const openMenu = () => {
+      navMenu.classList.add('is-open');
+      body.classList.add('mobile-nav-open');
+      navToggle.setAttribute('aria-expanded', 'true');
+      navToggle.setAttribute('aria-label', 'Close menu');
+    };
+    navToggle.addEventListener('click', event => {
+      event.stopPropagation();
+      if (navMenu.classList.contains('is-open')) closeMenu();
+      else openMenu();
     });
     navMenu.addEventListener('click', event => {
-      if (event.target.matches('a')) {
-        navMenu.classList.remove('is-open');
-        navToggle.setAttribute('aria-expanded', 'false');
-      }
+      if (event.target.matches('a')) closeMenu();
+    });
+    doc.addEventListener('click', event => {
+      if (!navMenu.classList.contains('is-open')) return;
+      if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) closeMenu();
+    });
+    doc.addEventListener('keydown', event => {
+      if (event.key === 'Escape') closeMenu();
+    });
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) closeMenu();
     });
   }
 

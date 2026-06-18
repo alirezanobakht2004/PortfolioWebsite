@@ -1,1835 +1,857 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<!doctype html>
+<html lang="en">
 <head>
-    <!-- =====================================================
-         BASIC META
-    ====================================================== -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>
-        Alireza Nobakht | ASP.NET Core Developer, Java Developer & Technical Product Builder
-    </title>
-
-    <meta
-        name="description"
-        content="Portfolio of Alireza Nobakht, Software Engineer specializing in ASP.NET Core, Spring Boot, Geospatial Systems, Mobile Applications, Embedded Systems, and Technical Product Development."
-    >
-
-    <meta
-        name="keywords"
-        content="Alireza Nobakht, ASP.NET Core Developer, Java Developer, Spring Boot Developer, Software Engineer, Backend Engineer, Technical Product Builder, Technical Product Manager, Geospatial Software Engineer, Embedded Systems Engineer"
-    >
-
-    <meta name="author" content="Alireza Nobakht">
-    <meta name="robots" content="index, follow">
-
-    <!-- =====================================================
-         OPEN GRAPH
-    ====================================================== -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Alireza Nobakht | Technical Product Builder">
-    <meta property="og:description"
-          content="Software Engineer specializing in ASP.NET Core, Spring Boot, Geospatial Systems, Mobile Applications, Embedded Systems, and Product-Oriented Development.">
-
-    <meta property="og:image"
-          content="assets/images/profile/cropped_profile.png">
-
-    <meta property="og:url"
-          content="https://alirezanobakht2004.github.io/">
-
-    <meta property="og:site_name"
-          content="Alireza Nobakht Portfolio">
-
-    <!-- =====================================================
-         TWITTER
-    ====================================================== -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Alireza Nobakht | Technical Product Builder">
-    <meta name="twitter:description"
-          content="Software Engineer specializing in ASP.NET Core, Spring Boot, Geospatial Systems, Mobile Applications, Embedded Systems, and Product-Oriented Development.">
-    <meta name="twitter:image"
-          content="assets/images/profile/cropped_profile.png">
-
-    <!-- =====================================================
-         THEME COLOR
-    ====================================================== -->
-    <meta name="theme-color" content="#0A0A0B">
-
-    <!-- =====================================================
-         FAVICON
-    ====================================================== -->
-    <link rel="icon" href="assets/favicon/favicon.ico">
-
-    <!-- =====================================================
-         GOOGLE FONTS
-    ====================================================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- =====================================================
-         CSS FILES
-    ====================================================== -->
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/sections.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
-    <!-- =====================================================
-         STRUCTURED DATA
-    ====================================================== -->
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"Person",
-      "name":"Alireza Nobakht",
-      "jobTitle":"Software Engineer",
-      "url":"https://alirezanobakht2004.github.io/",
-      "email":"mailto:alireza.nobakht2004@gmail.com",
-      "telephone":"+989109777936",
-      "sameAs":[
-        "https://github.com/alirezanobakht2004",
-        "https://linkedin.com/in/alireza-nobakht"
-      ]
-    }
-    </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alireza Nobakht — Backend Engineer & Technical Product Candidate</title>
+  <meta name="description" content="Alireza Nobakht — Backend Engineer and Technical Product Candidate specializing in ASP.NET Core, Java/Spring Boot, API-driven backend systems, connected workflows, and technical product delivery." />
+  <meta name="theme-color" content="#07101e" />
+  <meta property="og:title" content="Alireza Nobakht — Backend Engineer & Technical Product Candidate" />
+  <meta property="og:description" content="APIs, backend systems, data-driven workflows, and product experiences built for real-world constraints." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/cropped_profile.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alireza Nobakht — Backend Engineer & Technical Product Candidate" />
+  <meta name="twitter:description" content="ASP.NET Core, Java/Spring Boot, backend APIs, software systems, and technical product delivery." />
+  <meta name="twitter:image" content="assets/images/cropped_profile.png" />
+  <link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="assets/icons/favicon.png" sizes="512x512" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+  <link rel="preload" as="image" href="assets/images/cropped_profile.webp" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
+<body data-mode="all">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-glow" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Alireza Nobakht home">
+        <span class="brand-mark logo-mark" aria-hidden="true"><img src="assets/icons/an-logo.png" alt="" /></span>
+        <span class="brand-copy"><strong>Alireza Nobakht</strong><small>Backend · APIs · Product</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#tracks">Tracks</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-<body>
+  <main id="main">
+    <section class="hero section-observed" id="home" aria-labelledby="hero-title">
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">BACKEND SYSTEMS / APIS / PRODUCT-MINDED DELIVERY</p>
+          <h1 id="hero-title">Alireza Nobakht</h1>
+          <p class="headline">Backend Engineer &amp; Technical Product Candidate</p>
+          <p class="hero-text">I design and build APIs, backend systems, data-driven workflows, and product experiences that stay reliable under real-world constraints.</p>
+          <div class="role-chips" aria-label="Recruiter role lenses">
+            <button class="role-chip dotnet" type="button" data-mode-button="dotnet">ASP.NET / .NET</button>
+            <button class="role-chip java" type="button" data-mode-button="java">Java / Spring Boot</button>
+            <button class="role-chip product" type="button" data-mode-button="product">Technical Product</button>
+          </div>
+          <div class="hero-actions">
+            <a class="btn primary" href="#resume">Download Resume</a>
+            <a class="btn ghost" href="#projects">Explore Projects</a>
+            <a class="btn subtle" href="mailto:alireza.nobakht2004@gmail.com">Contact Me</a>
+          </div>
+          <dl class="hero-stats" aria-label="Profile proof highlights">
+            <div><dt>2+ years</dt><dd>production engineering</dd></div>
+            <div><dt>3 role tracks</dt><dd>.NET, Java, Product</dd></div>
+            <div><dt>6+ projects</dt><dd>selected case studies</dd></div>
+            <div><dt>2026</dt><dd>B.Sc. expected</dd></div>
+          </dl>
+        </div>
 
-    <!-- =====================================================
-         SKIP LINK
-    ====================================================== -->
-    <a href="#main-content" class="skip-link">
-        Skip to main content
-    </a>
+        <div class="hero-visual reveal" aria-label="Alireza Nobakht portrait and role system">
+          <div class="portrait-system portrait-system-premium">
+            <div class="orbit-glow" aria-hidden="true"></div>
+            <div class="orbit-deco orbit-deco-one" aria-hidden="true"></div>
+            <div class="orbit-deco orbit-deco-two" aria-hidden="true"></div>
+            <div class="orbit-path orbit-path-dotnet" aria-hidden="true"></div>
+            <div class="orbit-path orbit-path-java" aria-hidden="true"></div>
+            <div class="orbit-path orbit-path-product" aria-hidden="true"></div>
+            <div class="orbit-label orbit-label-dotnet" aria-hidden="true"><span>.NET</span></div>
+            <div class="orbit-label orbit-label-java" aria-hidden="true"><span>Java</span></div>
+            <div class="orbit-label orbit-label-product" aria-hidden="true"><span>Product</span></div>
+            <div class="orbit-secondary orbit-secondary-api" aria-hidden="true"><span class="orbit-particle orbit-particle-text">APIs</span></div>
+            <picture class="hero-photo">
+              <source srcset="assets/images/full_profile.webp" type="image/webp" />
+              <img src="assets/images/full_profile.png" alt="Portrait of Alireza Nobakht" width="1200" height="1200" />
+            </picture>
+            <div class="identity-card glass">
+              <img src="assets/images/cropped_profile.webp" alt="Alireza Nobakht avatar" />
+              <div><strong>Tehran, Iran</strong><span>Open to backend engineering and technical product roles</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- =====================================================
-         HEADER / NAVIGATION
-    ====================================================== -->
-    <header class="site-header" id="top">
+    <section class="lens-bar recruiter-mode-section" aria-labelledby="lens-title">
+      <div class="container lens-inner glass recruiter-panel">
+        <div class="lens-copy">
+          <p class="eyebrow">Recruiter Mode</p>
+          <h2 id="lens-title">Choose the lens recruiters care about</h2>
+          <p class="mode-helper" data-mode-helper>Compare all three role paths.</p>
+        </div>
+        <div class="mode-switch" role="group" aria-label="Select recruiter lens">
+          <button type="button" data-mode-button="all" class="is-active" aria-pressed="true">All</button>
+          <button type="button" data-mode-button="dotnet" aria-pressed="false">.NET Recruiter</button>
+          <button type="button" data-mode-button="java" aria-pressed="false">Java Recruiter</button>
+          <button type="button" data-mode-button="product" aria-pressed="false">Product Recruiter</button>
+        </div>
+      </div>
+    </section>
 
-        <nav class="navbar container"
-             aria-label="Primary Navigation">
+    <section class="section section-observed tracks-section" id="tracks" aria-labelledby="tracks-title">
+      <div class="container">
+        <div class="section-heading reveal tracks-heading">
+          <p class="eyebrow">Three recruiter lenses</p>
+          <h2 id="tracks-title">One profile, three hiring angles.</h2>
+          <p>A single technical foundation presented through three recruiter lenses: .NET backend, Java/Spring backend, and technical product delivery.</p>
+        </div>
+        <div class="track-grid recruiter-track-grid" aria-label="Three recruiter hiring angles">
+          <article class="track-card glass accent-dotnet reveal" data-track="dotnet">
+            <div class="track-icon" aria-hidden="true">.NET</div>
+            <div class="track-top"><span>.NET RECRUITER</span><strong>ASP.NET / .NET Backend</strong></div>
+            <p class="track-fit"><strong>Best for</strong>For teams hiring backend engineers to build secure APIs, SQL Server data layers, admin workflows, and production-ready service architecture.</p>
+            <div class="track-block">
+              <h3>Core strengths</h3>
+              <ul class="check-list">
+                <li>ASP.NET Core, C#, Web API, EF Core</li>
+                <li>SQL Server, Redis, JWT/RBAC</li>
+                <li>Clean Architecture, validation, testing, CI/CD</li>
+              </ul>
+            </div>
+            <div class="track-work" aria-label="Representative work for .NET backend roles">
+              <h3>Representative work</h3>
+              <div class="work-pills">
+                <span>Tender &amp; Vendor API</span>
+                <span>Travel Reservation Platform</span>
+                <span>Admin / RBAC workflows</span>
+                <span>Diagnostics tooling</span>
+              </div>
+            </div>
+            <a class="btn small dotnet" href="assets/resumes/alireza-nobakht-dotnet-backend-resume.pdf" download>Download .NET Resume</a>
+          </article>
 
-            <a href="#hero"
-               class="logo"
-               aria-label="Homepage">
-                <span class="logo-mark">AN</span>
-            </a>
+          <article class="track-card glass accent-java reveal" data-track="java">
+            <div class="track-icon" aria-hidden="true">J</div>
+            <div class="track-top"><span>JAVA RECRUITER</span><strong>Java / Spring Boot Backend</strong></div>
+            <p class="track-fit"><strong>Best for</strong>For teams hiring Spring Boot engineers to build REST APIs, data-backed services, backend platforms, and connected mobile/web workflows.</p>
+            <div class="track-block">
+              <h3>Core strengths</h3>
+              <ul class="check-list">
+                <li>Java, Spring Boot, Spring MVC, JPA/Hibernate</li>
+                <li>PostgreSQL, SQL, REST APIs, backend architecture</li>
+                <li>Android-connected workflows, React UI, offline sync</li>
+              </ul>
+            </div>
+            <div class="track-work" aria-label="Representative work for Java and Spring Boot roles">
+              <h3>Representative work</h3>
+              <div class="work-pills">
+                <span>Spring Boot data platform</span>
+                <span>Field data collection app</span>
+                <span>REST backend integrations</span>
+                <span>Android sync workflow</span>
+              </div>
+            </div>
+            <a class="btn small java" href="assets/resumes/alireza-nobakht-java-spring-resume.pdf" download>Download Java Resume</a>
+          </article>
 
-            <button
-                class="mobile-menu-toggle"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-                aria-controls="primary-navigation">
+          <article class="track-card glass accent-product reveal" data-track="product">
+            <div class="track-icon" aria-hidden="true">PM</div>
+            <div class="track-top"><span>PRODUCT RECRUITER</span><strong>Technical Product / Associate PM</strong></div>
+            <p class="track-fit"><strong>Best for</strong>For product teams that need someone who can translate technical complexity into requirements, workflows, trade-offs, and measurable delivery outcomes.</p>
+            <div class="track-block">
+              <h3>Core strengths</h3>
+              <ul class="check-list">
+                <li>Problem framing, user needs, personas, journey mapping</li>
+                <li>Requirements, acceptance criteria, prioritization</li>
+                <li>Technical feasibility, API behavior, KPI thinking</li>
+              </ul>
+            </div>
+            <div class="track-work" aria-label="Representative work for technical product roles">
+              <h3>Representative work</h3>
+              <div class="work-pills">
+                <span>Workflow design</span>
+                <span>Role-based systems</span>
+                <span>Offline constraints</span>
+                <span>Validation logic</span>
+                <span>Reliability improvements</span>
+              </div>
+            </div>
+            <a class="btn small product" href="assets/resumes/alireza-nobakht-product-management-resume.pdf" download>Download Product Resume</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <ul
-                id="primary-navigation"
-                class="nav-links">
-
-                <li>
-                    <a href="#about">About</a>
-                </li>
-
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-
-                <li>
-                    <a href="#experience">Experience</a>
-                </li>
-
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-
-                <li>
-                    <a href="#resume-center">Resume Center</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-
+    <section class="section outcomes-section" aria-labelledby="outcomes-title">
+      <div class="container">
+        <div class="section-heading reveal outcomes-heading">
+          <p class="eyebrow">Outcomes in context</p>
+          <h2 id="outcomes-title">Selected improvements from real projects.</h2>
+          <p>Numbers are only useful when they explain what changed. These outcomes are tied to backend performance, delivery quality, reliability, and workflow usability.</p>
+        </div>
+        <div class="outcome-grid reveal" aria-label="Selected improvements grouped by software value">
+          <article class="outcome-card outcome-performance">
+            <span class="outcome-tag">Backend performance</span>
+            <h3>Faster backend responses</h3>
+            <p>Improved API and query performance through caching, SQL optimization, indexing, and cleaner backend service design.</p>
+            <ul>
+              <li>40% average API latency improvement</li>
+              <li>60% response-time improvement in reservation workflows</li>
+              <li>35% reduced query time in tender workflows</li>
             </ul>
-
-            <div class="nav-actions">
-
-                <button
-                    id="theme-toggle"
-                    class="theme-toggle"
-                    aria-label="Toggle dark and light mode">
-
-                    <span class="theme-icon">☀</span>
-
-                </button>
-
-                <a href="assets/resumes/Alireza_Nobakht_Resume_ASP.NetCore.pdf"
-                   class="btn btn-primary"
-                   download>
-
-                    Download Resume
-
-                </a>
-
-            </div>
-
-        </nav>
-
-    </header>
-
-    <!-- =====================================================
-         MAIN CONTENT
-    ====================================================== -->
-    <main id="main-content">
-
-        <!-- =====================================================
-             HERO SECTION
-        ====================================================== -->
-        <section
-            id="hero"
-            class="hero-section">
-
-            <div class="container">
-
-                <div class="hero-grid">
-
-                    <!-- LEFT CONTENT -->
-                    <div class="hero-content">
-
-                        <p class="hero-eyebrow">
-                            Technical Product Builder
-                        </p>
-
-                        <h1 class="hero-title">
-                            Alireza Nobakht
-                        </h1>
-
-                        <h2 class="hero-subtitle">
-                            Software Engineer specializing in
-                            ASP.NET Core, Spring Boot,
-                            Geospatial Systems, Mobile Applications,
-                            Embedded Systems, and Product-Oriented Development.
-                        </h2>
-
-                        <p class="hero-description">
-
-                            I build software products from
-                            embedded devices to scalable backend
-                            platforms, combining engineering
-                            expertise with product thinking to
-                            deliver measurable business and user impact.
-
-                        </p>
-
-                        <div class="hero-cta-group">
-
-                            <a href="#projects"
-                               class="btn btn-primary">
-
-                                View Projects
-
-                            </a>
-
-                            <a href="#resume-center"
-                               class="btn btn-secondary">
-
-                                Resume Center
-
-                            </a>
-
-                            <a href="#contact"
-                               class="btn btn-ghost">
-
-                                Contact Me
-
-                            </a>
-
-                        </div>
-
-                        <!-- SOCIAL LINKS -->
-                        <div class="hero-socials">
-
-                            <a href="https://github.com/alirezanobakht2004"
-                               target="_blank"
-                               rel="noopener noreferrer"
-                               aria-label="GitHub Profile">
-
-                                GitHub
-
-                            </a>
-
-                            <a href="https://linkedin.com/in/alireza-nobakht"
-                               target="_blank"
-                               rel="noopener noreferrer"
-                               aria-label="LinkedIn Profile">
-
-                                LinkedIn
-
-                            </a>
-
-                            <button
-                                class="copy-email-btn"
-                                data-copy="alireza.nobakht2004@gmail.com">
-
-                                Copy Email
-
-                            </button>
-
-                        </div>
-
-                        <!-- METRICS -->
-                        <div class="hero-metrics">
-
-                            <article class="metric-card">
-
-                                <span class="metric-number">
-                                    40%
-                                </span>
-
-                                <span class="metric-label">
-                                    API Latency Reduction
-                                </span>
-
-                            </article>
-
-                            <article class="metric-card">
-
-                                <span class="metric-number">
-                                    99.9%
-                                </span>
-
-                                <span class="metric-label">
-                                    Transmission Reliability
-                                </span>
-
-                            </article>
-
-                            <article class="metric-card">
-
-                                <span class="metric-number">
-                                    95%+
-                                </span>
-
-                                <span class="metric-label">
-                                    Automated Test Coverage
-                                </span>
-
-                            </article>
-
-                            <article class="metric-card">
-
-                                <span class="metric-number">
-                                    6+
-                                </span>
-
-                                <span class="metric-label">
-                                    Major Projects Delivered
-                                </span>
-
-                            </article>
-
-                        </div>
-
-                    </div>
-
-                    <!-- RIGHT CONTENT -->
-                    <div class="hero-image-container">
-
-                        <figure class="hero-image-wrapper">
-
-                            <img
-                                src="assets/images/profile/cropped_profile.png"
-                                alt="Portrait of Alireza Nobakht"
-                                class="hero-image"
-                                loading="eager">
-
-                        </figure>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- =====================================================
-             CAREER FOCUS SECTION
-        ====================================================== -->
-        <section
-            id="career-focus"
-            class="career-focus-section section">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <span class="section-label">
-                        Career Focus
-                    </span>
-
-                    <h2 class="section-title">
-                        Three Paths. One Core Strength.
-                    </h2>
-
-                    <p class="section-description">
-
-                        My experience spans backend engineering,
-                        enterprise application development,
-                        geospatial systems, embedded software,
-                        and product-oriented problem solving.
-
-                    </p>
-
-                </div>
-
-                <div class="career-grid">
-
-                    <!-- ASP.NET -->
-                    <article class="career-card">
-
-                        <div class="career-card-header">
-
-                            <span class="career-tag">
-                                ASP.NET Core
-                            </span>
-
-                            <h3>
-                                ASP.NET Core Developer
-                            </h3>
-
-                        </div>
-
-                        <p>
-
-                            Building scalable backend systems
-                            using ASP.NET Core, SQL Server,
-                            Redis, Clean Architecture,
-                            Domain-Driven Design, and secure APIs.
-
-                        </p>
-
-                        <ul class="career-skills">
-
-                            <li>ASP.NET Core</li>
-                            <li>SQL Server</li>
-                            <li>Redis</li>
-                            <li>JWT Authentication</li>
-                            <li>Clean Architecture</li>
-
-                        </ul>
-
-                        <a href="#resume-center"
-                           class="text-link">
-
-                            View Resume →
-
-                        </a>
-
-                    </article>
-
-                    <!-- JAVA -->
-                    <article class="career-card">
-
-                        <div class="career-card-header">
-
-                            <span class="career-tag">
-                                Java
-                            </span>
-
-                            <h3>
-                                Java Developer
-                            </h3>
-
-                        </div>
-
-                        <p>
-
-                            Developing enterprise and geospatial
-                            applications using Spring Boot,
-                            Hibernate, PostgreSQL/PostGIS,
-                            Android, and RESTful services.
-
-                        </p>
-
-                        <ul class="career-skills">
-
-                            <li>Spring Boot</li>
-                            <li>Hibernate</li>
-                            <li>PostgreSQL</li>
-                            <li>PostGIS</li>
-                            <li>Android</li>
-
-                        </ul>
-
-                        <a href="#resume-center"
-                           class="text-link">
-
-                            View Resume →
-
-                        </a>
-
-                    </article>
-
-                    <!-- PRODUCT -->
-                    <article class="career-card">
-
-                        <div class="career-card-header">
-
-                            <span class="career-tag">
-                                Product
-                            </span>
-
-                            <h3>
-                                Product Management
-                            </h3>
-
-                        </div>
-
-                        <p>
-
-                            Applying technical expertise to
-                            product thinking, requirements
-                            analysis, stakeholder communication,
-                            workflow optimization, and solution design.
-
-                        </p>
-
-                        <ul class="career-skills">
-
-                            <li>Product Thinking</li>
-                            <li>Requirements</li>
-                            <li>Stakeholders</li>
-                            <li>Roadmapping</li>
-                            <li>Prioritization</li>
-
-                        </ul>
-
-                        <a href="#resume-center"
-                           class="text-link">
-
-                            View Resume →
-
-                        </a>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- =====================================================
-             ABOUT SECTION
-        ====================================================== -->
-        <section
-            id="about"
-            class="about-section section">
-
-            <div class="container">
-
-                <div class="about-grid">
-
-                    <div class="about-image-column">
-
-                        <img
-                            src="assets/images/profile/full_profile.png"
-                            alt="Alireza Nobakht"
-                            class="about-image"
-                            loading="lazy">
-
-                    </div>
-
-                    <div class="about-content-column">
-
-                        <span class="section-label">
-                            About Me
-                        </span>
-
-                        <h2 class="section-title">
-                            Engineering Systems,
-                            Building Products,
-                            Solving Real Problems
-                        </h2>
-
-                        <p>
-
-                            I am a Software Engineer and Technical Product Builder
-                            currently pursuing a Bachelor's degree in Computer
-                            Engineering at K. N. Toosi University of Technology.
-
-                        </p>
-
-                        <p>
-
-                            My professional experience spans backend engineering,
-                            geospatial systems, Android applications,
-                            embedded firmware, and enterprise software development.
-                            Through my work at Hiromap, I have contributed to
-                            systems that connect field operations,
-                            geospatial data collection,
-                            backend services, and user-facing applications.
-
-                        </p>
-
-                        <p>
-
-                            I enjoy solving complex technical challenges while
-                            maintaining a strong focus on user needs and business
-                            outcomes. Whether building APIs, mobile applications,
-                            firmware, or product workflows, my goal is always to
-                            create solutions that deliver measurable value.
-
-                        </p>
-
-                        <p>
-
-                            My long-term vision is to combine deep engineering
-                            expertise with product leadership and contribute to
-                            building impactful software products at scale.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- CONTINUES IN PART 2 -->
-        <!-- =====================================================
-             ACHIEVEMENTS SECTION
-        ====================================================== -->
-        <section
-            id="achievements"
-            class="achievements-section section">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <span class="section-label">
-                        Achievements
-                    </span>
-
-                    <h2 class="section-title">
-                        Measurable Results Across Engineering Projects
-                    </h2>
-
-                    <p class="section-description">
-
-                        I focus on building systems that deliver
-                        tangible improvements in performance,
-                        reliability, maintainability, and user productivity.
-
-                    </p>
-
-                </div>
-
-                <div class="achievement-grid">
-
-                    <article class="achievement-card">
-
-                        <span class="achievement-value">
-                            40%
-                        </span>
-
-                        <h3>
-                            API Latency Reduction
-                        </h3>
-
-                        <p>
-                            Improved backend performance through
-                            architecture optimization and efficient
-                            database access patterns.
-                        </p>
-
-                    </article>
-
-                    <article class="achievement-card">
-
-                        <span class="achievement-value">
-                            60%
-                        </span>
-
-                        <h3>
-                            Reservation Platform Performance Gain
-                        </h3>
-
-                        <p>
-                            Reduced response times in a travel
-                            reservation platform serving multiple
-                            transportation services.
-                        </p>
-
-                    </article>
-
-                    <article class="achievement-card">
-
-                        <span class="achievement-value">
-                            99.9%
-                        </span>
-
-                        <h3>
-                            Transmission Reliability
-                        </h3>
-
-                        <p>
-                            Achieved highly reliable communication
-                            between field devices and software systems.
-                        </p>
-
-                    </article>
-
-                    <article class="achievement-card">
-
-                        <span class="achievement-value">
-                            95%+
-                        </span>
-
-                        <h3>
-                            Automated Test Coverage
-                        </h3>
-
-                        <p>
-                            Maintained high quality standards
-                            using automated testing and validation.
-                        </p>
-
-                    </article>
-
-                    <article class="achievement-card">
-
-                        <span class="achievement-value">
-                            ±2 cm
-                        </span>
-
-                        <h3>
-                            Surveying Accuracy
-                        </h3>
-
-                        <p>
-                            Delivered centimeter-level positioning
-                            accuracy in surveying rover firmware.
-                        </p>
-
-                    </article>
-
-                    <article class="achievement-card">
-
-                        <span class="achievement-value">
-                            40%
-                        </span>
-
-                        <h3>
-                            Manual Error Reduction
-                        </h3>
-
-                        <p>
-                            Reduced field data entry errors through
-                            mobile workflow improvements and validation.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- =====================================================
-             SKILLS SECTION
-        ====================================================== -->
-        <section
-            id="skills"
-            class="skills-section section">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <span class="section-label">
-                        Skills & Expertise
-                    </span>
-
-                    <h2 class="section-title">
-                        Building Products Across the Entire Technology Stack
-                    </h2>
-
-                    <p class="section-description">
-
-                        My experience spans backend systems,
-                        mobile applications, embedded devices,
-                        geospatial platforms, DevOps practices,
-                        and product-oriented development.
-
-                    </p>
-
-                </div>
-
-                <div class="skills-grid">
-
-                    <!-- Backend -->
-                    <article class="skill-domain-card">
-
-                        <h3>
-                            Backend Engineering
-                        </h3>
-
-                        <ul class="skill-list">
-
-                            <li>ASP.NET Core</li>
-                            <li>C#</li>
-                            <li>Java</li>
-                            <li>Spring Boot</li>
-                            <li>Hibernate</li>
-                            <li>REST APIs</li>
-                            <li>SignalR</li>
-                            <li>JWT Authentication</li>
-                            <li>OAuth2</li>
-                            <li>Entity Framework Core</li>
-
-                        </ul>
-
-                    </article>
-
-                    <!-- Database -->
-                    <article class="skill-domain-card">
-
-                        <h3>
-                            Data & Geospatial Systems
-                        </h3>
-
-                        <ul class="skill-list">
-
-                            <li>SQL Server</li>
-                            <li>PostgreSQL</li>
-                            <li>PostGIS</li>
-                            <li>Redis</li>
-                            <li>GIS Platforms</li>
-                            <li>Leaflet</li>
-                            <li>OpenLayers</li>
-                            <li>Data Modeling</li>
-                            <li>Spatial Analysis</li>
-
-                        </ul>
-
-                    </article>
-
-                    <!-- Product -->
-                    <article class="skill-domain-card">
-
-                        <h3>
-                            Product & Strategy
-                        </h3>
-
-                        <ul class="skill-list">
-
-                            <li>Requirements Analysis</li>
-                            <li>Stakeholder Communication</li>
-                            <li>Workflow Design</li>
-                            <li>Problem Solving</li>
-                            <li>Product Thinking</li>
-                            <li>Roadmapping</li>
-                            <li>Feature Prioritization</li>
-                            <li>Technical Planning</li>
-
-                        </ul>
-
-                    </article>
-
-                    <!-- Mobile -->
-                    <article class="skill-domain-card">
-
-                        <h3>
-                            Mobile Development
-                        </h3>
-
-                        <ul class="skill-list">
-
-                            <li>Android Development</li>
-                            <li>Kotlin</li>
-                            <li>Java Android SDK</li>
-                            <li>Offline Synchronization</li>
-                            <li>GPS Integration</li>
-                            <li>Field Data Collection</li>
-
-                        </ul>
-
-                    </article>
-
-                    <!-- Embedded -->
-                    <article class="skill-domain-card">
-
-                        <h3>
-                            Embedded Systems
-                        </h3>
-
-                        <ul class="skill-list">
-
-                            <li>STM32</li>
-                            <li>C</li>
-                            <li>C++</li>
-                            <li>UART</li>
-                            <li>SPI</li>
-                            <li>I2C</li>
-                            <li>GPS</li>
-                            <li>IMU</li>
-                            <li>Kalman Filter</li>
-                            <li>PID Control</li>
-
-                        </ul>
-
-                    </article>
-
-                    <!-- DevOps -->
-                    <article class="skill-domain-card">
-
-                        <h3>
-                            DevOps & Delivery
-                        </h3>
-
-                        <ul class="skill-list">
-
-                            <li>Docker</li>
-                            <li>GitHub Actions</li>
-                            <li>Azure DevOps</li>
-                            <li>CI/CD</li>
-                            <li>Linux</li>
-                            <li>Git</li>
-                            <li>Automated Testing</li>
-
-                        </ul>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- =====================================================
-             EXPERIENCE SECTION
-        ====================================================== -->
-        <section
-            id="experience"
-            class="experience-section section">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <span class="section-label">
-                        Professional Experience
-                    </span>
-
-                    <h2 class="section-title">
-                        Industry Experience
-                    </h2>
-
-                </div>
-
-                <div class="timeline">
-
-                    <!-- HIROMAP -->
-                    <article class="timeline-item">
-
-                        <div class="timeline-marker"></div>
-
-                        <div class="timeline-content">
-
-                            <span class="timeline-date">
-                                February 2024 — Present
-                            </span>
-
-                            <h3>
-                                Software Developer & Embedded Systems Engineer
-                            </h3>
-
-                            <h4>
-                                Hiromap (Hirongar Pars Company)
-                            </h4>
-
-                            <ul>
-
-                                <li>
-                                    Developed enterprise backend systems using ASP.NET Core.
-                                </li>
-
-                                <li>
-                                    Built Spring Boot geospatial platforms for survey and mapping operations.
-                                </li>
-
-                                <li>
-                                    Developed Android applications for field data collection.
-                                </li>
-
-                                <li>
-                                    Designed embedded firmware for surveying hardware platforms.
-                                </li>
-
-                                <li>
-                                    Integrated mobile, backend, and embedded systems into unified workflows.
-                                </li>
-
-                                <li>
-                                    Improved reliability, performance, and operational efficiency across products.
-                                </li>
-
-                            </ul>
-
-                        </div>
-
-                    </article>
-
-                    <!-- GHALAMCHI -->
-                    <article class="timeline-item">
-
-                        <div class="timeline-marker"></div>
-
-                        <div class="timeline-content">
-
-                            <span class="timeline-date">
-                                August 2022 — June 2023
-                            </span>
-
-                            <h3>
-                                Technical Instructor & Educational Consultant
-                            </h3>
-
-                            <h4>
-                                Ghalamchi Educational Institute
-                            </h4>
-
-                            <ul>
-
-                                <li>
-                                    Taught programming fundamentals and algorithms.
-                                </li>
-
-                                <li>
-                                    Mentored students in software development concepts.
-                                </li>
-
-                                <li>
-                                    Guided problem-solving and computational thinking exercises.
-                                </li>
-
-                                <li>
-                                    Improved technical communication and presentation skills.
-                                </li>
-
-                            </ul>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- =====================================================
-             PROJECTS SECTION
-        ====================================================== -->
-        <section
-            id="projects"
-            class="projects-section section">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <span class="section-label">
-                        Featured Projects
-                    </span>
-
-                    <h2 class="section-title">
-                        Engineering Projects with Real-World Impact
-                    </h2>
-
-                    <p class="section-description">
-
-                        A selection of projects spanning enterprise
-                        software, geospatial systems, Android applications,
-                        embedded systems, and product-focused solutions.
-
-                    </p>
-
-                </div>
-
-                <div class="projects-grid">
-
-                    <!-- PROJECT 1 -->
-                    <article class="project-card">
-
-                        <div class="project-header">
-
-                            <h3>
-                                Geospatial Data Management Platform
-                            </h3>
-
-                            <span class="project-role">
-                                Backend & Platform Development
-                            </span>
-
-                        </div>
-
-                        <p class="project-description">
-
-                            Centralized management and visualization
-                            of surveying and geospatial datasets
-                            using enterprise-grade backend architecture.
-
-                        </p>
-
-                        <div class="project-tech">
-
-                            <span>Spring Boot</span>
-                            <span>Hibernate</span>
-                            <span>PostgreSQL</span>
-                            <span>PostGIS</span>
-                            <span>React</span>
-                            <span>Leaflet</span>
-
-                        </div>
-
-                        <ul class="project-highlights">
-
-                            <li>Centralized survey workflows</li>
-                            <li>Spatial data management</li>
-                            <li>Interactive mapping tools</li>
-
-                        </ul>
-
-                    </article>
-
-                    <!-- PROJECT 2 -->
-                    <article class="project-card">
-
-                        <div class="project-header">
-
-                            <h3>
-                                Field Survey Data Collection App
-                            </h3>
-
-                            <span class="project-role">
-                                Android Development
-                            </span>
-
-                        </div>
-
-                        <p class="project-description">
-
-                            Offline-capable Android application
-                            enabling efficient field data collection
-                            and synchronization.
-
-                        </p>
-
-                        <div class="project-tech">
-
-                            <span>Android</span>
-                            <span>Kotlin</span>
-                            <span>GPS</span>
-                            <span>REST API</span>
-
-                        </div>
-
-                        <ul class="project-highlights">
-
-                            <li>Offline synchronization</li>
-                            <li>40% reduction in manual errors</li>
-                            <li>Field workflow optimization</li>
-
-                        </ul>
-
-                    </article>
-
-                    <!-- PROJECT 3 -->
-                    <article class="project-card">
-
-                        <div class="project-header">
-
-                            <h3>
-                                Alibaba Travel Reservation System
-                            </h3>
-
-                            <span class="project-role">
-                                ASP.NET Core Backend
-                            </span>
-
-                        </div>
-
-                        <p class="project-description">
-
-                            High-performance reservation platform
-                            supporting multiple transportation services
-                            and user roles.
-
-                        </p>
-
-                        <div class="project-tech">
-
-                            <span>ASP.NET Core</span>
-                            <span>SQL Server</span>
-                            <span>Redis</span>
-                            <span>Kotlin</span>
-
-                        </div>
-
-                        <ul class="project-highlights">
-
-                            <li>60% faster response times</li>
-                            <li>Multi-role architecture</li>
-                            <li>Designed for high concurrency</li>
-
-                        </ul>
-
-                    </article>
-
-                    <!-- CONTINUES IN PART 3 -->
-                    <!-- PROJECT 4 -->
-                    <article class="project-card">
-
-                        <div class="project-header">
-
-                            <h3>
-                                Tender Management Platform API
-                            </h3>
-
-                            <span class="project-role">
-                                ASP.NET Core Backend Development
-                            </span>
-
-                        </div>
-
-                        <p class="project-description">
-
-                            Enterprise-grade tender and procurement
-                            management backend system focused on
-                            maintainability, testing, and business process automation.
-
-                        </p>
-
-                        <div class="project-tech">
-
-                            <span>ASP.NET Core</span>
-                            <span>Entity Framework Core</span>
-                            <span>SQL Server</span>
-                            <span>xUnit</span>
-                            <span>Clean Architecture</span>
-
-                        </div>
-
-                        <ul class="project-highlights">
-
-                            <li>95%+ automated test coverage</li>
-                            <li>Clean Architecture implementation</li>
-                            <li>Secure and scalable API design</li>
-
-                        </ul>
-
-                    </article>
-
-                    <!-- PROJECT 5 -->
-                    <article class="project-card">
-
-                        <div class="project-header">
-
-                            <h3>
-                                Device Diagnostics & Monitoring Platform
-                            </h3>
-
-                            <span class="project-role">
-                                Desktop Application Development
-                            </span>
-
-                        </div>
-
-                        <p class="project-description">
-
-                            Cross-functional platform used for device
-                            diagnostics, monitoring, communication,
-                            and operational support.
-
-                        </p>
-
-                        <div class="project-tech">
-
-                            <span>C#</span>
-                            <span>.NET</span>
-                            <span>Qt</span>
-                            <span>Kotlin</span>
-
-                        </div>
-
-                        <ul class="project-highlights">
-
-                            <li>99.5% successful data transfer rate</li>
-                            <li>Improved operational visibility</li>
-                            <li>Enhanced troubleshooting workflows</li>
-
-                        </ul>
-
-                    </article>
-
-                    <!-- PROJECT 6 -->
-                    <article class="project-card">
-
-                        <div class="project-header">
-
-                            <h3>
-                                Surveying Rover Firmware System
-                            </h3>
-
-                            <span class="project-role">
-                                Embedded Systems Engineering
-                            </span>
-
-                        </div>
-
-                        <p class="project-description">
-
-                            Embedded firmware powering advanced
-                            surveying devices requiring high precision,
-                            reliability, and real-time performance.
-
-                        </p>
-
-                        <div class="project-tech">
-
-                            <span>STM32</span>
-                            <span>C</span>
-                            <span>GPS</span>
-                            <span>IMU</span>
-                            <span>Kalman Filter</span>
-
-                        </div>
-
-                        <ul class="project-highlights">
-
-                            <li>Centimeter-level positioning accuracy</li>
-                            <li>Real-time sensor fusion</li>
-                            <li>High reliability field operation</li>
-
-                        </ul>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- =====================================================
-             RESUME CENTER
-        ====================================================== -->
-        <section
-            id="resume-center"
-            class="resume-center-section section">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <span class="section-label">
-                        Resume Center
-                    </span>
-
-                    <h2 class="section-title">
-                        Explore My Career Tracks
-                    </h2>
-
-                    <p class="section-description">
-
-                        Choose the resume most relevant to your hiring needs.
-                        Each version highlights a different aspect of my experience.
-
-                    </p>
-
-                </div>
-
-                <div class="resume-grid">
-
-                    <!-- ASP.NET -->
-                    <article class="resume-card">
-
-                        <div class="resume-card-header">
-
-                            <span class="resume-category">
-                                ASP.NET Core
-                            </span>
-
-                            <h3>
-                                ASP.NET Core Developer Resume
-                            </h3>
-
-                        </div>
-
-                        <p>
-
-                            Focused on backend engineering,
-                            scalable APIs, distributed systems,
-                            database optimization, Clean Architecture,
-                            and enterprise software development.
-
-                        </p>
-
-                        <ul>
-
-                            <li>ASP.NET Core</li>
-                            <li>C#</li>
-                            <li>SQL Server</li>
-                            <li>Redis</li>
-                            <li>Clean Architecture</li>
-
-                        </ul>
-
-                        <a
-                            href="assets/resumes/Alireza_Nobakht_Resume_ASP.NetCore.pdf"
-                            class="btn btn-primary"
-                            download>
-
-                            Download Resume
-
-                        </a>
-
-                    </article>
-
-                    <!-- JAVA -->
-                    <article class="resume-card">
-
-                        <div class="resume-card-header">
-
-                            <span class="resume-category">
-                                Java
-                            </span>
-
-                            <h3>
-                                Java Developer Resume
-                            </h3>
-
-                        </div>
-
-                        <p>
-
-                            Focused on Spring Boot,
-                            geospatial systems, Android development,
-                            PostgreSQL/PostGIS, and enterprise applications.
-
-                        </p>
-
-                        <ul>
-
-                            <li>Java</li>
-                            <li>Spring Boot</li>
-                            <li>PostgreSQL</li>
-                            <li>PostGIS</li>
-                            <li>Android</li>
-
-                        </ul>
-
-                        <a
-                            href="assets/resumes/Alireza_Nobakht_Java_Resume_v2.pdf"
-                            class="btn btn-primary"
-                            download>
-
-                            Download Resume
-
-                        </a>
-
-                    </article>
-
-                    <!-- PRODUCT -->
-                    <article class="resume-card">
-
-                        <div class="resume-card-header">
-
-                            <span class="resume-category">
-                                Product Management
-                            </span>
-
-                            <h3>
-                                Product Manager Resume
-                            </h3>
-
-                        </div>
-
-                        <p>
-
-                            Focused on product thinking,
-                            stakeholder collaboration,
-                            process optimization,
-                            user needs, and business outcomes.
-
-                        </p>
-
-                        <ul>
-
-                            <li>Product Thinking</li>
-                            <li>Requirements Analysis</li>
-                            <li>Stakeholder Management</li>
-                            <li>Prioritization</li>
-                            <li>Roadmapping</li>
-
-                        </ul>
-
-                        <a
-                            href="assets/resumes/Alireza_Nobakht_Associate_Product_Manager_Resume.pdf"
-                            class="btn btn-primary"
-                            download>
-
-                            Download Resume
-
-                        </a>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- =====================================================
-             EDUCATION
-        ====================================================== -->
-        <section
-            id="education"
-            class="education-section section">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <span class="section-label">
-                        Education
-                    </span>
-
-                    <h2 class="section-title">
-                        Academic Foundation
-                    </h2>
-
-                </div>
-
-                <article class="education-card">
-
-                    <h3>
-                        Bachelor of Computer Engineering
-                    </h3>
-
-                    <h4>
-                        K. N. Toosi University of Technology
-                    </h4>
-
-                    <p class="education-period">
-                        2022 – Present
-                    </p>
-
-                    <p>
-                        Pursuing a degree focused on software engineering,
-                        algorithms, databases, computer networks,
-                        operating systems, embedded systems,
-                        and computer architecture.
-                    </p>
-
-                    <div class="course-tags">
-
-                        <span>Software Engineering</span>
-                        <span>Database Systems</span>
-                        <span>Algorithms</span>
-                        <span>Computer Networks</span>
-                        <span>Operating Systems</span>
-                        <span>Embedded Systems</span>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-        <!-- =====================================================
-             CERTIFICATIONS
-        ====================================================== -->
-        <section
-            id="certifications"
-            class="certifications-section section">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <span class="section-label">
-                        Certifications & Continuous Learning
-                    </span>
-
-                    <h2 class="section-title">
-                        Professional Growth
-                    </h2>
-
-                </div>
-
-                <div class="certification-grid">
-
-                    <article class="certification-card">
-
-                        <h3>
-                            Advanced ASP.NET Core Development
-                        </h3>
-
-                        <p>
-                            Advanced backend development,
-                            API design, authentication,
-                            performance optimization,
-                            and enterprise architecture.
-                        </p>
-
-                    </article>
-
-                    <article class="certification-card">
-
-                        <h3>
-                            Clean Architecture & DDD
-                        </h3>
-
-                        <p>
-                            Domain-Driven Design principles,
-                            maintainable architecture,
-                            and scalable software design patterns.
-                        </p>
-
-                    </article>
-
-                    <article class="certification-card">
-
-                        <h3>
-                            Azure Fundamentals
-                        </h3>
-
-                        <p>
-                            Cloud infrastructure,
-                            deployment strategies,
-                            and modern DevOps workflows.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- =====================================================
-             CONTACT
-        ====================================================== -->
-        <section
-            id="contact"
-            class="contact-section section">
-
-            <div class="container">
-
-                <div class="contact-container">
-
-                    <span class="section-label">
-                        Contact
-                    </span>
-
-                    <h2 class="section-title">
-                        Let's Build Something Meaningful Together
-                    </h2>
-
-                    <p class="section-description">
-
-                        Whether you're hiring for software engineering,
-                        backend development, geospatial systems,
-                        or product-focused roles, I'd be glad to connect.
-
-                    </p>
-
-                    <div class="contact-grid">
-
-                        <article class="contact-card">
-
-                            <h3>Email</h3>
-
-                            <a href="mailto:alireza.nobakht2004@gmail.com">
-                                alireza.nobakht2004@gmail.com
-                            </a>
-
-                            <button
-                                class="copy-btn"
-                                data-copy="alireza.nobakht2004@gmail.com">
-
-                                Copy Email
-
-                            </button>
-
-                        </article>
-
-                        <article class="contact-card">
-
-                            <h3>Phone</h3>
-
-                            <a href="tel:+989109777936">
-                                +98 910 977 7936
-                            </a>
-
-                            <button
-                                class="copy-btn"
-                                data-copy="+989109777936">
-
-                                Copy Number
-
-                            </button>
-
-                        </article>
-
-                        <article class="contact-card">
-
-                            <h3>GitHub</h3>
-
-                            <a
-                                href="https://github.com/alirezanobakht2004"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                github.com/alirezanobakht2004
-
-                            </a>
-
-                        </article>
-
-                        <article class="contact-card">
-
-                            <h3>LinkedIn</h3>
-
-                            <a
-                                href="https://linkedin.com/in/alireza-nobakht"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                linkedin.com/in/alireza-nobakht
-
-                            </a>
-
-                        </article>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
-    <footer class="site-footer">
-
-        <div class="container footer-content">
-
-            <div class="footer-brand">
-
-                <h3>
-                    Alireza Nobakht
-                </h3>
-
-                <p>
-                    Building software products from field devices
-                    to scalable platforms.
-                </p>
-
-            </div>
-
-            <div class="footer-links">
-
-                <a href="#hero">Home</a>
-                <a href="#projects">Projects</a>
-                <a href="#resume-center">Resumes</a>
-                <a href="#contact">Contact</a>
-
-            </div>
-
-            <div class="footer-socials">
-
-                <a
-                    href="https://github.com/alirezanobakht2004"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    GitHub
-
-                </a>
-
-                <a
-                    href="https://linkedin.com/in/alireza-nobakht"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    LinkedIn
-
-                </a>
-
-            </div>
-
+          </article>
+
+          <article class="outcome-card outcome-quality">
+            <span class="outcome-tag">Testing &amp; maintainability</span>
+            <h3>More reliable delivery</h3>
+            <p>Improved maintainability and confidence by standardizing validation, mapping, exception handling, documentation, and automated testing.</p>
+            <ul>
+              <li>95%+ test coverage in Tender &amp; Vendor Management API</li>
+              <li>Standardized validation and OpenAPI documentation</li>
+              <li>Cleaner cross-cutting backend concerns</li>
+            </ul>
+          </article>
+
+          <article class="outcome-card outcome-reliability">
+            <span class="outcome-tag">Reliability engineering</span>
+            <h3>Stable connected-system workflows</h3>
+            <p>Built diagnostic and transfer tooling for real-world device workflows where data integrity, retry behavior, and operational stability matter.</p>
+            <ul>
+              <li>Zero observed data loss in serial diagnostics tooling</li>
+              <li>99.5% transfer success in secure file-transfer workflows</li>
+              <li>Resume, retry, progress, and chunking for large files</li>
+            </ul>
+          </article>
+
+          <article class="outcome-card outcome-product">
+            <span class="outcome-tag">Workflow design</span>
+            <h3>Better field and admin workflows</h3>
+            <p>Translated operational constraints into clearer workflows for users, roles, validation states, offline behavior, and technical handoffs.</p>
+            <ul>
+              <li>Reduced manual field-entry errors by 40%</li>
+              <li>Improved role-based admin workflows</li>
+              <li>Supported low-connectivity and offline synchronization scenarios</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-observed" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading project-heading reveal">
+          <p class="eyebrow">SELECTED ENGINEERING WORK</p>
+          <h2 id="projects-title">Selected work that shows how I build.</h2>
+          <p>A focused set of projects showing backend architecture, Java/.NET delivery, product workflows, data handling, and reliability under real-world constraints.</p>
+        </div>
+        <div class="filter-row project-filter-row reveal" role="group" aria-label="Filter projects">
+          <button type="button" class="is-active" data-filter="all">All</button>
+          <button type="button" data-filter="dotnet">.NET</button>
+          <button type="button" data-filter="java">Java</button>
+          <button type="button" data-filter="product">Product</button>
+          <button type="button" data-filter="backend">Backend</button>
+          <button type="button" data-filter="data-platforms">Data Platforms</button>
+          <button type="button" data-filter="mobile">Mobile</button>
+          <button type="button" data-filter="connected-systems">Connected Systems</button>
         </div>
 
-        <div class="footer-bottom">
+        <div class="project-grid project-grid-premium">
+          <article class="project-card project-card-premium glass featured accent-dotnet reveal" data-project-tags="dotnet backend quality">
+            <div class="project-meta premium-meta"><span class="project-date-pill">Jun 2025</span></div>
+            <h3>Tender &amp; Vendor Management API</h3>
+            <p class="project-line">Procurement and bidding backend with structured vendor, bid, tender, and identity workflows.</p>
+            <div class="role-signal-row" aria-label="Role signals"><span class="signal-chip dotnet">.NET Backend</span><span class="signal-chip">API Design</span><span class="signal-chip quality">Quality</span></div>
+            <div class="tech-stack" aria-label="Tech stack"><span class="tag dotnet">Web API</span><span class="tag dotnet">EF Core</span><span class="tag dotnet">FluentValidation</span><span class="tag dotnet">AutoMapper</span><span class="tag success">xUnit</span></div>
+            <div class="case-flow">
+              <div><b>Challenge</b><p>Procurement workflows needed structured tender, bid, vendor, and identity handling with clear lifecycle validation.</p></div>
+              <div><b>Built</b><p>Implemented REST workflows with policy-based authorization, mapping, validation, dependency injection, exception handling, and OpenAPI documentation.</p></div>
+              <div><b>Impact</b><p>Reached 95%+ test coverage and reduced query time by 35% through unit/integration testing and backend optimization.</p></div>
+            </div>
+            <p class="project-demonstrates"><strong>What this demonstrates:</strong> Backend discipline across security, testability, data access, and cross-cutting service architecture.</p>
+          </article>
 
-            <p>
-                © 2026 Alireza Nobakht. All Rights Reserved.
-            </p>
+          <article class="project-card project-card-premium glass accent-dotnet reveal" data-project-tags="dotnet backend product mobile">
+            <div class="project-meta premium-meta"><span class="project-date-pill">May 2025</span></div>
+            <h3>Multi-Modal Travel Reservation Platform</h3>
+            <p class="project-line">Independent reservation backend for travel-service workflows, roles, booking logic, and performance tuning.</p>
+            <div class="role-signal-row" aria-label="Role signals"><span class="signal-chip dotnet">.NET Backend</span><span class="signal-chip product">Product Workflow</span><span class="signal-chip performance">Performance</span></div>
+            <div class="tech-stack" aria-label="Tech stack"><span class="tag dotnet">ASP.NET Core</span><span class="tag dotnet">C#</span><span class="tag dotnet">SQL Server</span><span class="tag dotnet">EF Core</span><span class="tag success">Redis</span><span class="tag java">Kotlin</span></div>
+            <div class="case-flow">
+              <div><b>Challenge</b><p>A multi-role booking flow needed consistent reservations, permissions, API behavior, and performance under load.</p></div>
+              <div><b>Built</b><p>Designed four architecture layers and modeled booking workflows for three transportation modes and three roles: Admin, User, and Vendor.</p></div>
+              <div><b>Impact</b><p>Reduced response time by 60%, from 450 ms to 180 ms, using Redis caching and query optimization while validating 10k+ concurrent-user scenarios.</p></div>
+            </div>
+            <p class="project-demonstrates"><strong>What this demonstrates:</strong> Backend architecture, performance tuning, role-based workflows, and product journey thinking.</p>
+          </article>
 
+          <article class="project-card project-card-premium glass accent-java reveal" data-project-tags="java backend data-platforms product">
+            <div class="project-meta premium-meta"><span class="project-date-pill">Apr 2025</span></div>
+            <h3>Spring Boot Data Management Platform</h3>
+            <p class="project-line">Java/Spring backend for storing, processing, and visualizing structured field and location data.</p>
+            <div class="role-signal-row" aria-label="Role signals"><span class="signal-chip java">Java Backend</span><span class="signal-chip data">Data Platform</span><span class="signal-chip">Web UI</span></div>
+            <div class="tech-stack" aria-label="Tech stack"><span class="tag java">Java</span><span class="tag java">Spring Boot</span><span class="tag java">Hibernate ORM</span><span class="tag success">PostgreSQL/PostGIS</span><span class="tag java">REST</span><span class="tag java">React</span><span class="tag java">Leaflet/OpenLayers</span></div>
+            <div class="case-flow">
+              <div><b>Challenge</b><p>Field and location datasets needed a scalable way to store, retrieve, process, and visualize coordinates, measurements, and map layers.</p></div>
+              <div><b>Built</b><p>Built Spring Boot services for upload, retrieval, processing, and map rendering with Hibernate ORM, optimized spatial queries, React, Leaflet, and OpenLayers.</p></div>
+              <div><b>Impact</b><p>Created a foundation for efficient access to large datasets and clearer management of field information.</p></div>
+            </div>
+            <p class="project-demonstrates"><strong>What this demonstrates:</strong> Java backend depth across data modeling, REST services, query optimization, and usable workflow design.</p>
+          </article>
+
+          <article class="project-card project-card-premium glass accent-java reveal" data-project-tags="java mobile backend product">
+            <div class="project-meta premium-meta"><span class="project-date-pill">Jul 2024</span></div>
+            <h3>Field Data Collection App</h3>
+            <p class="project-line">Offline-capable mobile workflow for reliable data capture, validation, and synchronization.</p>
+            <div class="role-signal-row" aria-label="Role signals"><span class="signal-chip java">Java Mobile</span><span class="signal-chip">Backend Sync</span><span class="signal-chip product">Product Workflow</span></div>
+            <div class="tech-stack" aria-label="Tech stack"><span class="tag java">Java Android SDK</span><span class="tag java">Spring Boot</span><span class="tag dotnet">REST APIs</span><span class="tag success">GPS</span><span class="tag java">Offline Storage</span><span class="tag product">Validation</span></div>
+            <div class="case-flow">
+              <div><b>Challenge</b><p>Field users needed reliable capture of coordinates, notes, images, and observations in limited-connectivity environments.</p></div>
+              <div><b>Built</b><p>Implemented GPS tracking, local caching, secure REST synchronization, real-time validation, and coordinate-correction workflows.</p></div>
+              <div><b>Impact</b><p>Reduced manual field-entry errors by 40% and improved field-data reliability.</p></div>
+            </div>
+            <p class="project-demonstrates"><strong>What this demonstrates:</strong> User-constraint thinking, offline-first behavior, Android delivery, and backend synchronization.</p>
+          </article>
+
+          <article class="project-card project-card-premium glass accent-connected reveal" data-project-tags="dotnet java connected-systems mobile backend">
+            <div class="project-meta premium-meta"><span class="project-date-pill">2024–2025</span></div>
+            <h3>Desktop Diagnostics &amp; Secure Transfer</h3>
+            <p class="project-line">Real-time diagnostic tooling and secure cross-platform data transfer for connected-device workflows.</p>
+            <div class="role-signal-row" aria-label="Role signals"><span class="signal-chip connected">Connected Systems</span><span class="signal-chip quality">Reliability</span><span class="signal-chip">Desktop Tools</span></div>
+            <div class="tech-stack" aria-label="Tech stack"><span class="tag dotnet">C#</span><span class="tag success">Qt</span><span class="tag dotnet">WPF/WinForms</span><span class="tag java">Kotlin/Android</span><span class="tag success">Encryption</span></div>
+            <div class="case-flow">
+              <div><b>Challenge</b><p>Device workflows needed tools for streaming, filtering, visualizing, recording, and transferring data reliably.</p></div>
+              <div><b>Built</b><p>Built C++/Qt and C# desktop tools with CSV/JSON/binary exports, async buffering, configurable communication, and Bluetooth/Wi-Fi transfer with progress, resume, retry, alerts, and chunking for large files.</p></div>
+              <div><b>Impact</b><p>Delivered zero observed data loss, 40% lower memory use, 99.5% transfer success, and 35% faster transfers.</p></div>
+            </div>
+            <p class="project-demonstrates"><strong>What this demonstrates:</strong> Reliability-focused engineering beyond standard web apps, with user-facing transfer behavior and operational stability.</p>
+          </article>
+
+          <article class="project-card project-card-premium glass accent-connected supporting reveal" data-project-tags="connected-systems product">
+            <div class="project-meta premium-meta"><span class="project-date-pill">Jul 2024</span></div>
+            <h3>Surveying Rover Firmware</h3>
+            <p class="project-line">Embedded control and telemetry firmware for navigation and real-time data collection.</p>
+            <div class="role-signal-row" aria-label="Role signals"><span class="signal-chip connected">Connected Systems</span><span class="signal-chip">Firmware</span><span class="signal-chip quality">Reliability</span></div>
+            <div class="tech-stack" aria-label="Tech stack"><span class="tag success">STM32</span><span class="tag success">C/C++</span><span class="tag success">GPS/IMU</span><span class="tag success">PID</span><span class="tag success">Kalman Filter</span></div>
+            <div class="case-flow">
+              <div><b>Challenge</b><p>A field rover needed reliable motion, telemetry, sensor fusion, and runtime under difficult operating conditions.</p></div>
+              <div><b>Built</b><p>Implemented STM32 firmware with a 100 Hz control loop, PID motor control, GPS/IMU fusion, Kalman filtering, power management, UART/SPI telemetry, fault recovery, and error correction.</p></div>
+              <div><b>Impact</b><p>Achieved ±2 cm accuracy, 99.9% transmission reliability over 500 m, and 8+ hours runtime.</p></div>
+            </div>
+            <p class="project-demonstrates"><strong>What this demonstrates:</strong> Low-level systems depth, connected-device reliability, and the ability to work close to hardware when needed.</p>
+          </article>
+        </div>
+        <p class="project-confidential-note reveal">Project details are summarized to focus on architecture, delivery, and outcomes.</p>
+      </div>
+    </section>
+
+    <section class="section section-observed skills-capability-section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading reveal capability-heading">
+          <p class="eyebrow">Capability map</p>
+          <h2 id="skills-title">Capabilities organized around real delivery.</h2>
+          <p>Grouped by how I build: backend services, data workflows, quality systems, delivery tooling, connected applications, and product decisions.</p>
         </div>
 
-    </footer>
+        <div class="capability-controls reveal" aria-label="Skill track controls">
+          <div class="capability-legend" aria-label="Capability track legend">
+            <span class="legend-item legend-dotnet"><span></span>.NET Backend</span>
+            <span class="legend-item legend-java"><span></span>Java Backend</span>
+            <span class="legend-item legend-product"><span></span>Technical Product</span>
+          </div>
+          <div class="skill-filter-row" role="group" aria-label="Filter capability map by role track">
+            <button type="button" class="is-active" data-skill-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-skill-filter="dotnet" aria-pressed="false">.NET</button>
+            <button type="button" data-skill-filter="java" aria-pressed="false">Java</button>
+            <button type="button" data-skill-filter="product" aria-pressed="false">Product</button>
+          </div>
+        </div>
 
-    <!-- =====================================================
-         TOAST CONTAINER
-    ====================================================== -->
-    <div
-        id="toast-container"
-        aria-live="polite"
-        aria-atomic="true">
+        <div class="capability-map-v2 reveal" aria-label="Capability cards organized by delivery context">
+          <article class="capability-card glass capability-backend" data-skill-tags="dotnet java">
+            <div class="capability-card-top">
+              <h3>Backend &amp; APIs</h3>
+              <div class="track-markers" aria-label="Supported tracks"><span data-track="dotnet">.NET</span><span data-track="java">Java</span></div>
+            </div>
+            <p class="used-for"><strong>Used for:</strong> Designing secure REST services, application workflows, and backend logic for production systems.</p>
+            <div class="capability-chips" aria-label="Skills"><span class="tag dotnet">ASP.NET Core</span><span class="tag dotnet">C#</span><span class="tag dotnet">Web API</span><span class="tag java">Spring Boot</span><span class="tag dotnet">REST APIs</span><span class="tag dotnet">SignalR</span></div>
+            <p class="seen-in"><strong>Seen in:</strong> Tender API, Travel Reservation Platform, Spring Boot Data Platform</p>
+          </article>
+
+          <article class="capability-card glass capability-architecture" data-skill-tags="dotnet java">
+            <div class="capability-card-top">
+              <h3>Architecture &amp; Service Design</h3>
+              <div class="track-markers" aria-label="Supported tracks"><span data-track="dotnet">.NET</span><span data-track="java">Java</span></div>
+            </div>
+            <p class="used-for"><strong>Used for:</strong> Structuring applications so business rules, data access, validation, and delivery concerns stay maintainable.</p>
+            <div class="capability-chips" aria-label="Skills"><span class="tag dotnet">Clean Architecture</span><span class="tag dotnet">DDD</span><span class="tag dotnet">CQRS</span><span class="tag dotnet">SOLID</span><span class="tag dotnet">Repository / Unit of Work</span><span class="tag dotnet">Dependency Injection</span></div>
+            <p class="seen-in"><strong>Seen in:</strong> Travel Reservation Platform, Tender API, backend service workflows</p>
+          </article>
+
+          <article class="capability-card glass capability-data" data-skill-tags="dotnet java">
+            <div class="capability-card-top">
+              <h3>Data &amp; Performance</h3>
+              <div class="track-markers" aria-label="Supported tracks"><span data-track="dotnet">.NET</span><span data-track="java">Java</span></div>
+            </div>
+            <p class="used-for"><strong>Used for:</strong> Modeling data, optimizing queries, improving response time, and keeping backend workflows efficient.</p>
+            <div class="capability-chips" aria-label="Skills"><span class="tag dotnet">SQL Server</span><span class="tag java">PostgreSQL</span><span class="tag dotnet">EF Core</span><span class="tag java">JPA/Hibernate</span><span class="tag success">Redis</span><span class="tag success">Query Optimization</span><span class="tag success">Indexing</span></div>
+            <p class="seen-in"><strong>Seen in:</strong> Travel Reservation Platform, Tender API, Spring Boot Data Platform</p>
+          </article>
+
+          <article class="capability-card glass capability-quality" data-skill-tags="dotnet java">
+            <div class="capability-card-top">
+              <h3>Security &amp; Quality</h3>
+              <div class="track-markers" aria-label="Supported tracks"><span data-track="dotnet">.NET</span><span data-track="java">Java</span></div>
+            </div>
+            <p class="used-for"><strong>Used for:</strong> Building safer APIs with authorization, validation, automated tests, and clearer error behavior.</p>
+            <div class="capability-chips" aria-label="Skills"><span class="tag dotnet">JWT/RBAC</span><span class="tag dotnet">OAuth 2.0</span><span class="tag success">FluentValidation</span><span class="tag success">xUnit</span><span class="tag success">NUnit</span><span class="tag success">Moq</span><span class="tag success">OpenAPI</span></div>
+            <p class="seen-in"><strong>Seen in:</strong> Tender API, Travel Reservation Platform, admin/RBAC workflows</p>
+          </article>
+
+          <article class="capability-card glass capability-delivery" data-skill-tags="dotnet java">
+            <div class="capability-card-top">
+              <h3>DevOps &amp; Delivery</h3>
+              <div class="track-markers" aria-label="Supported tracks"><span data-track="dotnet">.NET</span><span data-track="java">Java</span></div>
+            </div>
+            <p class="used-for"><strong>Used for:</strong> Supporting repeatable delivery, version control, deployment workflows, and production debugging.</p>
+            <div class="capability-chips" aria-label="Skills"><span class="tag success">Docker</span><span class="tag success">GitHub Actions</span><span class="tag dotnet">Azure DevOps</span><span class="tag success">Git</span><span class="tag success">Linux Fundamentals</span><span class="tag success">Monitoring</span><span class="tag success">CI/CD</span></div>
+            <p class="seen-in"><strong>Seen in:</strong> Backend projects, deployment workflows, production debugging</p>
+          </article>
+
+          <article class="capability-card glass capability-mobile" data-skill-tags="java product">
+            <div class="capability-card-top">
+              <h3>Mobile &amp; Web Workflows</h3>
+              <div class="track-markers" aria-label="Supported tracks"><span data-track="java">Java</span><span data-track="product">Product</span></div>
+            </div>
+            <p class="used-for"><strong>Used for:</strong> Connecting backend services to mobile and web interfaces with user-facing workflow behavior.</p>
+            <div class="capability-chips" aria-label="Skills"><span class="tag java">Java Android SDK</span><span class="tag java">Kotlin/Android</span><span class="tag java">React</span><span class="tag java">TypeScript</span><span class="tag java">Thymeleaf</span><span class="tag java">Leaflet</span><span class="tag java">OpenLayers</span></div>
+            <p class="seen-in"><strong>Seen in:</strong> Field Data Collection App, Spring Boot Data Platform, admin dashboards</p>
+          </article>
+
+          <article class="capability-card glass capability-connected" data-skill-tags="dotnet java">
+            <div class="capability-card-top">
+              <h3>Connected Systems</h3>
+              <div class="track-markers" aria-label="Supported tracks"><span data-track="dotnet">.NET</span><span data-track="java">Java</span></div>
+            </div>
+            <p class="used-for"><strong>Used for:</strong> Working with device-connected software where data integrity, communication, and reliability matter.</p>
+            <div class="capability-chips" aria-label="Skills"><span class="tag success">STM32</span><span class="tag success">C/C++</span><span class="tag success">UART/SPI/I2C</span><span class="tag success">GPS/IMU</span><span class="tag success">Real-time Processing</span><span class="tag success">Qt</span><span class="tag dotnet">WPF/WinForms</span></div>
+            <p class="seen-in"><strong>Seen in:</strong> Desktop Diagnostics &amp; Secure Transfer, Surveying Rover Firmware</p>
+          </article>
+
+          <article class="capability-card glass capability-product" data-skill-tags="product">
+            <div class="capability-card-top">
+              <h3>Product Discovery</h3>
+              <div class="track-markers" aria-label="Supported tracks"><span data-track="product">Product</span></div>
+            </div>
+            <p class="used-for"><strong>Used for:</strong> Understanding user constraints, workflow pain points, and the practical context behind software requirements.</p>
+            <div class="capability-chips" aria-label="Skills"><span class="tag product">Problem Framing</span><span class="tag product">User Needs</span><span class="tag product">Personas</span><span class="tag product">Journey Mapping</span><span class="tag product">Value Propositions</span><span class="tag product">Workflow Analysis</span></div>
+            <p class="seen-in"><strong>Seen in:</strong> Field Data Collection App, product-oriented project framing, role-based workflows</p>
+          </article>
+
+          <article class="capability-card glass capability-priority" data-skill-tags="product">
+            <div class="capability-card-top">
+              <h3>Requirements &amp; Prioritization</h3>
+              <div class="track-markers" aria-label="Supported tracks"><span data-track="product">Product</span></div>
+            </div>
+            <p class="used-for"><strong>Used for:</strong> Turning technical complexity into clearer scope, acceptance criteria, trade-offs, and delivery decisions.</p>
+            <div class="capability-chips" aria-label="Skills"><span class="tag product">User Stories</span><span class="tag product">Acceptance Criteria</span><span class="tag product">Backlog Concepts</span><span class="tag product">Impact vs Effort</span><span class="tag product">Stakeholder Communication</span><span class="tag product">KPI Thinking</span></div>
+            <p class="seen-in"><strong>Seen in:</strong> Travel Reservation Platform, Field Data Collection App, admin workflows</p>
+          </article>
+
+          <article class="capability-card glass capability-communication" data-skill-tags="product">
+            <div class="capability-card-top">
+              <h3>Communication &amp; Teaching</h3>
+              <div class="track-markers" aria-label="Supported tracks"><span data-track="product">Product</span></div>
+            </div>
+            <p class="used-for"><strong>Used for:</strong> Explaining technical concepts clearly, mentoring learners, documenting decisions, and supporting collaboration.</p>
+            <div class="capability-chips" aria-label="Skills"><span class="tag product">Technical Documentation</span><span class="tag product">Mentoring</span><span class="tag product">Code Review</span><span class="tag product">Structured Lessons</span><span class="tag product">Debugging</span><span class="tag product">Cross-functional Communication</span></div>
+            <p class="seen-in"><strong>Seen in:</strong> Technical instructor role, documentation, team handoffs</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section product-thinking" aria-labelledby="product-thinking-title">
+      <div class="container product-delivery">
+        <div class="product-thinking-header reveal">
+          <span class="section-badge product-badge">Engineering-fluent product thinking</span>
+          <p class="eyebrow">Product thinking from engineering delivery</p>
+          <h2 id="product-thinking-title">Product judgment shaped by building software.</h2>
+          <p>My product perspective comes from building systems where user workflows, API behavior, technical constraints, reliability, and delivery decisions all have to work together.</p>
+        </div>
+        <div class="product-flow reveal" aria-label="Product delivery thinking flow">
+          <article class="product-step step-understand">
+            <span class="step-number">01</span>
+            <div>
+              <p class="step-subtitle">Discovery inputs</p>
+              <h3>Understand</h3>
+              <p>Clarify users, workflow pain points, constraints, acceptance criteria, and the real context behind the request.</p>
+            </div>
+            <ul class="step-examples" aria-label="Understand examples">
+              <li>User needs</li>
+              <li>Workflow pain points</li>
+              <li>Acceptance criteria</li>
+              <li>Constraint mapping</li>
+            </ul>
+          </article>
+          <article class="product-step step-structure">
+            <span class="step-number">02</span>
+            <div>
+              <p class="step-subtitle">Workflow design</p>
+              <h3>Structure</h3>
+              <p>Turn complexity into roles, states, edge cases, API behavior, and clear product flows.</p>
+            </div>
+            <ul class="step-examples" aria-label="Structure examples">
+              <li>Journey mapping</li>
+              <li>Role behavior</li>
+              <li>State handling</li>
+              <li>Edge cases</li>
+            </ul>
+          </article>
+          <article class="product-step step-deliver">
+            <span class="step-number">03</span>
+            <div>
+              <p class="step-subtitle">Technical execution support</p>
+              <h3>Deliver</h3>
+              <p>Support implementation through feasibility thinking, dependency awareness, release risk, and cross-functional clarity.</p>
+            </div>
+            <ul class="step-examples" aria-label="Deliver examples">
+              <li>Technical scoping</li>
+              <li>API behavior</li>
+              <li>Dependency tracking</li>
+              <li>Release risk</li>
+            </ul>
+          </article>
+          <article class="product-step step-improve">
+            <span class="step-number">04</span>
+            <div>
+              <p class="step-subtitle">Outcome focus</p>
+              <h3>Improve</h3>
+              <p>Use performance, reliability, validation, and usability signals to improve how the product works in practice.</p>
+            </div>
+            <ul class="step-examples" aria-label="Improve examples">
+              <li>Performance</li>
+              <li>Reliability</li>
+              <li>Error reduction</li>
+              <li>Operational usability</li>
+            </ul>
+          </article>
+        </div>
+        <p class="product-flow-note reveal">This is the product layer behind the engineering work: understanding the problem, shaping the workflow, supporting delivery, and improving outcomes.</p>
+      </div>
+    </section>
+
+    <section class="section section-observed experience-section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-heading reveal experience-heading">
+          <p class="eyebrow">Experience timeline</p>
+          <h2 id="experience-title">Experience across backend systems, connected software, and product delivery.</h2>
+          <p>Work spanning production APIs, data workflows, mobile/web integrations, connected-system tooling, technical instruction, and cross-functional delivery.</p>
+        </div>
+        <ol class="timeline experience-timeline premium-experience-timeline reveal">
+          <li class="experience-entry is-current">
+            <div class="time-marker experience-date">
+              <span>Feb 2024 – Present</span>
+              <em>Current role</em>
+            </div>
+            <article class="glass experience-card experience-card-primary" tabindex="0">
+              <div class="experience-card-top">
+                <div class="experience-title-block">
+                  <h3>Software Developer &amp; Embedded Systems Engineer</h3>
+                  <p class="company">Hiromap / Hirongar Pars Company · <a href="https://hiromap.com" target="_blank" rel="noopener">hiromap.com</a> · Tehran, Iran</p>
+                </div>
+                <div class="experience-tags" aria-label="Role relevance">
+                  <span>Backend</span>
+                  <span>Java/.NET</span>
+                  <span>Product Workflows</span>
+                  <span>Connected Systems</span>
+                </div>
+              </div>
+              <p class="experience-summary">Built and supported software across backend services, admin workflows, data handling, connected-device tooling, and product-oriented delivery.</p>
+              <div class="experience-highlights" aria-label="Selected experience highlights">
+                <span>API performance optimization</span>
+                <span>Admin/RBAC workflows</span>
+                <span>Java/Spring data services</span>
+                <span>Secure transfer tooling</span>
+                <span>Android/desktop integration</span>
+              </div>
+              <div class="experience-contribution-grid">
+                <section class="experience-contribution">
+                  <h4>Backend &amp; API Delivery</h4>
+                  <p>Built production backend services, API workflows, admin dashboards, and role-based access flows.</p>
+                </section>
+                <section class="experience-contribution">
+                  <h4>Java/.NET Engineering</h4>
+                  <p>Delivered Java/Spring and .NET backend work across data handling, service design, validation, and performance optimization.</p>
+                </section>
+                <section class="experience-contribution">
+                  <h4>Connected Software</h4>
+                  <p>Connected Android, desktop, and device-facing software through synchronization, diagnostics, data transfer, and reliability-focused tooling.</p>
+                </section>
+                <section class="experience-contribution">
+                  <h4>Product &amp; Workflow Thinking</h4>
+                  <p>Supported product workflow thinking around roles, validation, constraints, technical handoffs, and delivery trade-offs.</p>
+                </section>
+              </div>
+              <p class="experience-value"><strong>Professional value:</strong> production engineering, backend delivery, cross-platform integration, and real workflow ownership.</p>
+            </article>
+          </li>
+          <li class="experience-entry">
+            <div class="time-marker experience-date">
+              <span>Aug 2022 – Jun 2023</span>
+            </div>
+            <article class="glass experience-card teaching-card" tabindex="0">
+              <div class="experience-card-top">
+                <div class="experience-title-block">
+                  <h3>Technical Instructor &amp; Educational Consultant</h3>
+                  <p class="company">Ghalamchi Educational Institute · Tehran, Iran</p>
+                </div>
+                <div class="experience-tags" aria-label="Role relevance">
+                  <span>Teaching / Communication</span>
+                  <span>Mentoring</span>
+                  <span>Problem Solving</span>
+                  <span>Technical Clarity</span>
+                </div>
+              </div>
+              <p class="experience-summary">Mentored students and designed structured learning experiences around programming fundamentals, algorithms, problem solving, and software-development practices.</p>
+              <div class="experience-contribution-grid">
+                <section class="experience-contribution">
+                  <h4>Technical Mentoring</h4>
+                  <p>Mentored students in programming fundamentals, algorithms, debugging, problem solving, and software-development practices.</p>
+                </section>
+                <section class="experience-contribution">
+                  <h4>Structured Learning Design</h4>
+                  <p>Designed lessons, exercises, walkthroughs, and peer-learning sessions to reinforce technical understanding.</p>
+                </section>
+                <section class="experience-contribution">
+                  <h4>Communication Practice</h4>
+                  <p>Explained technical concepts clearly, adapted to learner needs, and supported consistent progress.</p>
+                </section>
+                <section class="experience-contribution">
+                  <h4>Product-Relevant Skill</h4>
+                  <p>Strengthened communication, facilitation, structured thinking, and the ability to translate complexity into clear steps.</p>
+                </section>
+              </div>
+              <p class="experience-value"><strong>Professional value:</strong> communication, mentoring, structured thinking, and explaining complex topics clearly.</p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section education-section" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section-heading education-heading reveal">
+          <p class="eyebrow">Academic foundation</p>
+          <h2 id="education-title">Computer engineering foundation, continuously extended.</h2>
+          <p>Formal computer engineering study combined with ongoing backend, architecture, cloud, and product-oriented learning.</p>
+        </div>
+        <div class="credential-grid reveal">
+          <article class="credential-card education-card glass">
+            <div class="credential-card-head">
+              <span class="credential-icon" aria-hidden="true">⌘</span>
+              <span class="credential-label">Education</span>
+            </div>
+            <h3>B.Sc. Computer Engineering</h3>
+            <dl class="credential-meta">
+              <div><dt>Institution</dt><dd>K.N. Toosi University of Technology</dd></div>
+              <div><dt>Timeline</dt><dd>Sep 2022 – Present · Expected graduation: 2026</dd></div>
+            </dl>
+            <p class="credential-copy">Computer engineering foundation covering algorithms, databases, software engineering, operating systems, networks, embedded systems, and object-oriented programming.</p>
+            <div class="credential-chips" aria-label="Study areas">
+              <span>Algorithms</span><span>Databases</span><span>Software Engineering</span><span>Operating Systems</span><span>Networks</span><span>Embedded Systems</span><span>OOP</span>
+            </div>
+            <p class="credential-note">Teaching Assistant for core programming courses.</p>
+          </article>
+          <article class="credential-card development-card glass">
+            <div class="credential-card-head">
+              <span class="credential-icon" aria-hidden="true">↗</span>
+              <span class="credential-label">Professional development</span>
+            </div>
+            <h3>Continuous technical growth</h3>
+            <p class="credential-copy">Ongoing learning focused on backend architecture, cloud fundamentals, scalable systems, and production-quality delivery.</p>
+            <div class="learning-grid" aria-label="Learning areas">
+              <section class="learning-area">
+                <h4>Backend Architecture</h4>
+                <ul>
+                  <li>Advanced ASP.NET Core coursework</li>
+                  <li>Clean Architecture &amp; DDD self-study</li>
+                </ul>
+              </section>
+              <section class="learning-area">
+                <h4>Cloud &amp; Delivery</h4>
+                <ul>
+                  <li>Azure Fundamentals &amp; Cloud Basics in progress</li>
+                  <li>CI/CD and deployment fundamentals</li>
+                </ul>
+              </section>
+              <section class="learning-area learning-area-wide">
+                <h4>Scalable Systems</h4>
+                <ul>
+                  <li>Database performance</li>
+                  <li>Software architecture</li>
+                  <li>Backend design fundamentals</li>
+                </ul>
+              </section>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-observed resume-section" id="resume" aria-labelledby="resume-title">
+      <div class="container">
+        <div class="section-heading resume-heading reveal">
+          <p class="eyebrow">Resume downloads</p>
+          <h2 id="resume-title">Choose the resume version that fits your hiring lens.</h2>
+          <p>Each version keeps the same core story, but emphasizes the details most relevant to a specific role.</p>
+        </div>
+        <div class="resume-grid resume-role-grid reveal">
+          <article class="resume-card resume-role-card glass accent-dotnet" data-resume-track="dotnet">
+            <div class="resume-card-top">
+              <span class="resume-icon" aria-hidden="true">.NET</span>
+              <span class="resume-lens">Backend lens</span>
+            </div>
+            <h3>.NET Backend Resume</h3>
+            <div class="resume-best-block">
+              <span>Best for</span>
+              <p>ASP.NET Core, secure APIs, SQL Server data layers, backend architecture, testing, and delivery workflows.</p>
+            </div>
+            <div class="resume-focus-chips" aria-label=".NET resume focus areas">
+              <span>ASP.NET Core</span><span>C#</span><span>Web API</span><span>EF Core</span><span>SQL Server</span><span>Redis</span><span>JWT/RBAC</span><span>Testing</span>
+            </div>
+            <p class="resume-fit-line">Best for recruiters hiring ASP.NET / .NET backend engineers.</p>
+            <div class="resume-actions"><a class="btn small dotnet" href="assets/resumes/Alireza_Nobakht_Resume_Final.pdf" download>Download PDF</a><a class="btn small ghost" href="assets/resumes/Alireza_Nobakht_Resume_Final.html">View HTML</a></div>
+          </article>
+          <article class="resume-card resume-role-card glass accent-java" data-resume-track="java">
+            <div class="resume-card-top">
+              <span class="resume-icon" aria-hidden="true">J</span>
+              <span class="resume-lens">Spring lens</span>
+            </div>
+            <h3>Java / Spring Boot Resume</h3>
+            <div class="resume-best-block">
+              <span>Best for</span>
+              <p>Spring Boot APIs, data-backed services, backend platforms, Android-connected workflows, and REST integrations.</p>
+            </div>
+            <div class="resume-focus-chips" aria-label="Java resume focus areas">
+              <span>Java</span><span>Spring Boot</span><span>JPA/Hibernate</span><span>PostgreSQL</span><span>REST APIs</span><span>Android Sync</span><span>React UI</span>
+            </div>
+            <p class="resume-fit-line">Best for recruiters hiring Java / Spring Boot backend engineers.</p>
+            <div class="resume-actions"><a class="btn small java" href="assets/resumes/Alireza_Nobakht_Java_Resume_Final_Tweaked.pdf" download>Download PDF</a><a class="btn small ghost" href="assets/resumes/Alireza_Nobakht_Java_Resume_Final_Tweaked.html">View HTML</a></div>
+          </article>
+          <article class="resume-card resume-role-card glass accent-product" data-resume-track="product">
+            <div class="resume-card-top">
+              <span class="resume-icon" aria-hidden="true">PM</span>
+              <span class="resume-lens">Product lens</span>
+            </div>
+            <h3>Product Resume</h3>
+            <div class="resume-best-block">
+              <span>Best for</span>
+              <p>Associate PM, Technical Product Owner, workflow design, requirements, feasibility, stakeholder communication, and measurable delivery.</p>
+            </div>
+            <div class="resume-focus-chips" aria-label="Product resume focus areas">
+              <span>Requirements</span><span>User Stories</span><span>Acceptance Criteria</span><span>Workflow Design</span><span>Prioritization</span><span>Feasibility</span><span>KPI Thinking</span>
+            </div>
+            <p class="resume-fit-line">Best for product teams looking for an engineering-fluent product candidate.</p>
+            <div class="resume-actions"><a class="btn small product" href="assets/resumes/Alireza_Nobakht_Associate_Product_Manager_Resume_Final.pdf" download>Download PDF</a><a class="btn small ghost" href="assets/resumes/Alireza_Nobakht_Associate_Product_Manager_Resume_Final.html">View HTML</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-observed contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-wrap reveal">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <span class="availability-badge">Open to relevant roles</span>
+          <h2 id="contact-title">Let’s connect about backend, Java/.NET, or technical product roles.</h2>
+          <p class="contact-lead">Open to backend engineering, Java/Spring Boot, ASP.NET Core, and technical product opportunities.</p>
+          <p class="contact-note">I’m interested in roles where backend engineering, system reliability, product workflows, and technical communication matter.</p>
+          <div class="contact-actions" aria-label="Primary contact actions">
+            <a class="btn primary" href="mailto:alireza.nobakht2004@gmail.com">Email Me</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/alireza-nobakht" target="_blank" rel="noreferrer">View LinkedIn</a>
+            <a class="btn subtle" href="https://github.com/alirezanobakht2004" target="_blank" rel="noreferrer">View GitHub</a>
+          </div>
+        </div>
+
+        <aside class="contact-card contact-methods glass" aria-label="Contact methods">
+          <div class="contact-card-head">
+            <span class="contact-card-icon logo-card-icon" aria-hidden="true"><img src="assets/icons/an-logo.png" alt="" /></span>
+            <div>
+              <strong>Direct contact</strong>
+              <span>Role-specific resumes are ready above.</span>
+            </div>
+          </div>
+          <a class="contact-row" href="mailto:alireza.nobakht2004@gmail.com">
+            <span class="contact-row-icon" aria-hidden="true">@</span>
+            <span class="contact-row-text"><small>Email</small><strong>alireza.nobakht2004@gmail.com</strong></span>
+          </a>
+          <a class="contact-row" href="tel:+989109777936">
+            <span class="contact-row-icon" aria-hidden="true">☎</span>
+            <span class="contact-row-text"><small>Phone</small><strong>(+98) 910-977-7936</strong></span>
+          </a>
+          <a class="contact-row" href="https://github.com/alirezanobakht2004" target="_blank" rel="noreferrer">
+            <span class="contact-row-icon" aria-hidden="true">GH</span>
+            <span class="contact-row-text"><small>GitHub</small><strong>github.com/alirezanobakht2004</strong></span>
+            <span class="external-mark" aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-row" href="https://www.linkedin.com/in/alireza-nobakht" target="_blank" rel="noreferrer">
+            <span class="contact-row-icon" aria-hidden="true">in</span>
+            <span class="contact-row-text"><small>LinkedIn</small><strong>linkedin.com/in/alireza-nobakht</strong></span>
+            <span class="external-mark" aria-hidden="true">↗</span>
+          </a>
+          <div class="contact-row is-static">
+            <span class="contact-row-icon" aria-hidden="true">⌁</span>
+            <span class="contact-row-text"><small>Location</small><strong>Tehran, Iran</strong></span>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-gradient" aria-hidden="true"></div>
+    <div class="container footer-grid">
+      <section class="footer-brand" aria-label="Portfolio identity">
+        <strong>Alireza Nobakht</strong>
+        <span>Backend Engineer &amp; Technical Product Candidate</span>
+        <small>ASP.NET / .NET · Java / Spring Boot · Technical Product</small>
+      </section>
+      <nav class="footer-column" aria-label="Footer navigation">
+        <h2>Explore</h2>
+        <a href="#home">Home</a>
+        <a href="#tracks">Tracks</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <nav class="footer-column" aria-label="Footer contact links">
+        <h2>Connect</h2>
+        <a href="https://github.com/alirezanobakht2004" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/alireza-nobakht" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="mailto:alireza.nobakht2004@gmail.com">Email</a>
+        <a href="#home">Back to top</a>
+      </nav>
     </div>
-
-    <!-- =====================================================
-         JAVASCRIPT FILES
-    ====================================================== -->
-    <script src="js/theme.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/clipboard.js"></script>
-    <script src="js/app.js"></script>
-
+    <div class="container footer-bottom">
+      <span>© <span id="current-year">2026</span> Alireza Nobakht.</span>
+      <span>Built as a static portfolio for GitHub Pages.</span>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

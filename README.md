@@ -59,18 +59,13 @@ alireza-nobakht-portfolio/
     │   ├── full_profile.png
     │   ├── full_profile.webp
     │   ├── cropped_profile.png
-    │   └── cropped_profile.webp
-    └── resumes/
-        ├── alireza-nobakht-dotnet-backend-resume-ledgerflow.pdf
-        ├── alireza-nobakht-dotnet-backend-resume-ledgerflow.html
-        ├── alireza-nobakht-java-spring-resume.pdf
-        ├── alireza-nobakht-java-spring-resume.html
-        ├── alireza-nobakht-product-management-resume.pdf
-        ├── alireza-nobakht-product-management-resume.html
-        ├── Alireza_Nobakht_Java_Resume_Final_Tweaked.pdf
-        ├── Alireza_Nobakht_Java_Resume_Final_Tweaked.html
-        ├── Alireza_Nobakht_Associate_Product_Manager_Resume_Final.pdf
-        └── Alireza_Nobakht_Associate_Product_Manager_Resume_Final.html
+    │   └── cropped_profile.webp    └── resumes/
+        ├── alireza-nobakht-dotnet-backend-resume.pdf
+        ├── alireza-nobakht-dotnet-backend-resume.html
+        ├── alireza-nobakht-java-spring-boot-backend-resume.pdf
+        ├── alireza-nobakht-java-spring-boot-backend-resume.html
+        ├── alireza-nobakht-technical-product-resume.pdf
+        └── alireza-nobakht-technical-product-resume.html
 ```
 
 ---

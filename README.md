@@ -108,7 +108,7 @@ http://localhost:8000
 Email: alireza.nobakht2004@gmail.com
 Phone: (+98) 910-977-7936
 GitHub: github.com/alirezanobakht2004
-LinkedIn: linkedin.com/in/alireza-nobakht
+LinkedIn: linkedin.com/in/alireza-nobakht-work
 Location: Tehran, Iran
 ```
 
